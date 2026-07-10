@@ -2,7 +2,6 @@ import flet as ft
 from dataclasses import dataclass
 
 
-MAX_RESULTS = 100
 ICON_SIZE = 40
 TEXT_SIZE = 10
 TEXT_WIDTH = 100
@@ -73,7 +72,7 @@ def IconBrowser(icon_set, expand: bool = False):
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
             spacing=GRID_SPACING,
         )
-        for item in results[:MAX_RESULTS]
+        for item in results
     ]
 
     return ft.Container(
